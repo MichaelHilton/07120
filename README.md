@@ -141,13 +141,13 @@ $ docker pull ghcr.io/zeeshanlakhani/07120:latest
 Then you can run it with a mounted volume of your `.c0` files for example:
 
 ```sh
-$ docker run -it --rm -v <path-to-my-c0-files>:/home/07120 -w /home/07120 ghcr.io/zeeshanlakhani/07120
+$ docker run --platform linux/amd64 -it --rm -v <path-to-my-c0-files>:/home/07120 -w /home/07120 ghcr.io/zeeshanlakhani/07120
 ```
 
 Another option is first invoke the container like so:
 
 ```sh
-$ docker run --name=c0-docker -it -v <path-to-my-c0-files>:/home/07120 -w /home/07120 ghcr.io/zeeshanlakhani/07120
+$ docker run --platform linux/amd64 --name=c0-docker -it -v <path-to-my-c0-files>:/home/07120 -w /home/07120 ghcr.io/zeeshanlakhani/07120
 ```
 
 and then just start it on subsequent invocations:
@@ -163,7 +163,7 @@ $ docker container ls -a | grep c0-docker
 $ docker container rm [container_id]
 ```
 
-where `[container_id]` is the output of the first command.
+where `[container_id]` is the first output of the first command.
 
 You can also run the [container in the background][docker-bg] (in detached mode)
 and `docker attach` or `docker exec` into it.
