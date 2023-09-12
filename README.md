@@ -121,6 +121,9 @@ C0 depends on `libpng` and `libncurses`. If you have those installed
 
 ```sh
 $ git clone https://github.com/zeeshanlakhani/07120
+$ cd 07120
+$ git submoodule init
+$ git submodule update
 $ cd c0/cc0
 $ ./configure
 $ make -j
