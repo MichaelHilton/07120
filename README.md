@@ -71,7 +71,7 @@ Note: you might need to disable gatekeeper as described here: https://osxdaily.c
     $ git clone https://github.com/zeeshanlakhani/07120
     $ cd c0/cc0
     $ ./configure
-    $ env PATH=<where-you-built-mlton-in-the-previous-step/mlton/build/bin:$PATH LIBRARY_PATH=/opt/local/lib/ C_INCLUDE_PATH=/opt/local/include/  make -j
+    $ env PATH=<where-you-built-mlton-in-the-previous-step/mlton>/build/bin:$PATH LIBRARY_PATH=/opt/local/lib/ C_INCLUDE_PATH=/opt/local/include/  make -j
     ```
 
   * Then `bin/cc0` and `bin/coin` (`coin` is the C0 interpreter, `cc0` is the compiler)
