@@ -56,6 +56,8 @@ Follow these steps:
     $ cd <where-you-placed-mlton-source-code>
     $ env PATH=<where-you-placed-mlton-amd64-static>/bin:$PATH LIBRARY_PATH=/opt/local/lib/ C_INCLUDE_PATH=/opt/local/include/ make WITH_GMP_DIR=/opt/local
     ```
+Note: you might need to disable gatekeeper as described here: https://osxdaily.com/2015/05/04/disable-gatekeeper-command-line-mac-osx/
+
 
   * Install the CC0 dependencies using [Homebrew][homebrew] or [MacPorts][macports] (brew example shown here):
 
